@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffc200"/>
+      <stop offset="1" stop-color="#ffdd5e"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="112" height="112" rx="16" fill="url(#g)"/>
+  <path d="M64 36c10 0 18 8 18 18v6h4a8 8 0 0 1 8 8v22a8 8 0 0 1-8 8H42a8 8 0 0 1-8-8V68a8 8 0 0 1 8-8h4v-6c0-10 8-18 18-18z" fill="#1a2042"/>
+  <text x="64" y="108" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="14" fill="#ffffff">PRIVACY</text>
+</svg>

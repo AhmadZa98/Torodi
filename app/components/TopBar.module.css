@@ -1,0 +1,78 @@
+.topbar {
+  width: 100%;
+  background: #5d27aa; /* requested color */
+  color: #ffffff;
+  font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+  font-size: 14px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1100; /* above navbar */
+  box-sizing: border-box;
+}
+
+.inner {
+  width: 100%;
+  padding: 6px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  box-sizing: border-box;
+}
+
+.left,
+.right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.contactLink {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  transition: color 200ms ease;
+  display: inline-flex; /* keep icon and text on one line */
+  align-items: center;
+  /* flex-direction: ; icon on the right, text to its left */
+  gap: 6px; /* spacing between text and icon */
+  white-space: nowrap; /* prevent breaking text and icon onto separate lines */
+}
+
+.contactLink:hover,
+.contactLink:focus-visible {
+  color: #ffffff;
+}
+
+.iconLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.18);
+  text-decoration: none;
+  transition: background 200ms ease, transform 180ms ease, color 200ms ease;
+}
+
+.iconLink:hover,
+.iconLink:focus-visible {
+  background: rgba(255, 255, 255, 0.28);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .inner {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+  .left {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+}
